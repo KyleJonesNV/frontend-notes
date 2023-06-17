@@ -13,7 +13,7 @@ export function useUserTopics() {
   return { topics, error, isLoading, mutateTopic }
 }
 
-export function useNotesForTopic(topic: Topic | null) {
+export function useNotesForTopic(topic: Topic | undefined) {
   const query = {
     UserID: userId,
     Title: topic?.Title,
