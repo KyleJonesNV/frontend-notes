@@ -1,4 +1,4 @@
-import { Note } from '@/components/Content/Content'
+import { Note } from '@/types/types'
 import { environment } from '../../environment'
 
 export const getAllForUser = (query: any) => {
