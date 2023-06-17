@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Note } from '../Content/Content'
 import CodeMirror from '@uiw/react-codemirror'
 import { markdown, markdownLanguage } from '@codemirror/lang-markdown'
 import { languages } from '@codemirror/language-data'
+import { Note } from '@/types/types'
 
 const NoteEditor = ({onSave} : {onSave: (note: Note) => void}) => {
   const [title, setTitle] = useState<string>('')

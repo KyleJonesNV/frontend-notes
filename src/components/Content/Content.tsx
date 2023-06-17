@@ -69,18 +69,16 @@ const Content = () => {
           <TopicSelector topics={topics} onSelectTopic={onSelectTopic} onAddTopic={onAddTopic} />
         </div>
         <div className="mx-10 mt-10 col-span-3">
-          <div className="">
-            {selectedTopic && (
-              <>
-                {notesForTopic?.Notes?.map((note, i) => (
-                  <div key={i} className="mt-5">
-                    <NoteCard note={note} onDelete={() => onDelete(note)} />
-                  </div>
-                ))}
-                <NoteEditor onSave={onSave} />
-              </>
-            )}
-          </div>
+          {selectedTopic && (
+            <>
+              {notesForTopic?.Notes?.map((note, i) => (
+                <div key={i} className="mt-5">
+                  <NoteCard note={note} onDelete={() => onDelete(note)} />
+                </div>
+              ))}
+              <NoteEditor onSave={onSave} />
+            </>
+          )}
         </div>
       </div>
     </>

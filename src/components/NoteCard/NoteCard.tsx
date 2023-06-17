@@ -1,5 +1,5 @@
+import { Note } from '@/types/types'
 import { useState } from 'react'
-import { Note } from '../Content/Content'
 import ReactMarkDown from 'react-markdown'
 
 function NoteCard({ note, onDelete }: { note: Note, onDelete: () => void }) {
