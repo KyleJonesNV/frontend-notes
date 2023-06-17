@@ -1,6 +1,8 @@
-import { Topic } from "@/types/types";
+import { Topic } from '@/types/types'
+import { useState } from 'react'
 
 function TopicSelector({ topics, onSelectTopic, onAddTopic }: { topics: Topic[]; onSelectTopic: (topic: Topic) => void; onAddTopic: (name: string) => void }) {
+  const [topicName, setTopicName] = useState<string>('')
   return (
     <>
       <h2 className="text-lg font-bold p-2">Topics</h2>
@@ -19,18 +21,29 @@ function TopicSelector({ topics, onSelectTopic, onAddTopic }: { topics: Topic[];
       </ul>
       <div className="divider"></div>
       <div className="row-auto gap-2 ml-2">
-        <button className="btn btn-sm btn-neutral mr-2">Add</button>
-        <input
-            type="text"
-            placeholder="New Topic"
-            className="input-bordered input input-sm mb-12"
-            onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-                onAddTopic(e.currentTarget.value)
+        <button
+          className="btn btn-sm btn-neutral mr-2"
+          onClick={() => {
+            if (topicName !== '') {
+              onAddTopic(topicName)
             }
-            }}
+          }}>
+          Add
+        </button>
+        <input
+          type="text"
+          placeholder="New Topic"
+          className="input-bordered input input-sm mb-12"
+          onChange={(e) => {
+            setTopicName(e.currentTarget.value)
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && topicName !== '') {
+              onAddTopic(topicName)
+            }
+          }}
         />
-      </div>      
+      </div>
     </>
   )
 }
