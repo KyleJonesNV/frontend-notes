@@ -10,10 +10,10 @@ const NoteEditor = ({ onSave, selectedTopic, selectableTopics }: { onSave: (titl
   const [selectedTopicTitleInNoteEditor, setSelectedTopicInNoteEditor] = useState<string>(selectableTopics && selectableTopics.length > 0 ? selectableTopics[0].Title : "")
 
   const handleSave = () => {
-    if (!selectedTopic || selectedTopicTitleInNoteEditor === "") {
+    if (!selectedTopic && selectedTopicTitleInNoteEditor === "") {
       return
     }
-    onSave(selectedTopic.Title ?? selectedTopicTitleInNoteEditor, {
+    onSave(selectedTopic?.Title ?? selectedTopicTitleInNoteEditor, {
       Title: title,
       Content: content,
     })

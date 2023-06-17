@@ -22,5 +22,5 @@ export function useNotesForTopic(topic: Topic | undefined) {
 
   const notesForTopic = notesData?.body as Topic
 
-  return { notesForTopic, error, isLoading, mutateNotes }
+  return {notesForTopic, error, isLoading, mutateNotes}
 }
