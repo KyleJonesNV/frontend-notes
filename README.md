@@ -1,6 +1,10 @@
 ## Frontend markdown notes app
 
-This is a personal project I built to experiment with [Next.js](https://nextjs.org/) [AWS](https://aws.amazon.com/) services.
+This is a personal project I built to experiment with [Next.js](https://nextjs.org/) and [AWS](https://aws.amazon.com/) services.
+
+## Backend repo
+
+The backend of the application was built in golang and can be found [here](https://github.com/KyleJonesNV/go-service-notes)
 
 ## About the app
 
@@ -23,3 +27,4 @@ yarn dev
 # or
 pnpm dev
 ```
+
