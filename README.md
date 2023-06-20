@@ -13,7 +13,7 @@ Something unique about the application is its support for markdown and code snip
 
 ## Test it out
 
-The application is currently hosted [here](http://frontend-notes.s3-website-eu-west-1.amazonaws.com/)
+The application is currently hosted [here](https://kylewestly.com)
 It is setup with a test user so feel free to add new topics and notes if you would like to see how it works.
 
 ## Running locally
