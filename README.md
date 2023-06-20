@@ -14,7 +14,7 @@ Something unique about the application is its support for markdown and code snip
 ## Test it out
 
 The application is currently hosted [here](http://frontend-notes.s3-website-eu-west-1.amazonaws.com/)
-It is setup with a test user so feel free the add new topics and notes
+It is setup with a test user so feel free to add new topics and notes if you would like to see how it works.
 
 ## Running locally
 
@@ -27,4 +27,13 @@ yarn dev
 # or
 pnpm dev
 ```
+
+Running locally will connect you to the backend database hosted in AWS.
+
+## Improvements / things I would like to do next
+
+<ol>
+  <li>User login support</li>
+  <li>Support for editting existing notes</li>
+</ol> 
 

@@ -18,7 +18,6 @@ const Header = () => {
                 <img src="https://img.freepik.com/free-vector/cute-cat-gaming-cartoon_138676-2969.jpg?w=1800&t=st=1681666122~exp=1681666722~hmac=baacb883735b7b047695c84b6d84062bcf30ed639108cc788277ab9868df4676" alt="Test user" />
               </div>
             </label>
-            {/* <button className="btn-ghost rounded-btn btn">Sign in</button> */}
           </div>
         </div>
       </div>
