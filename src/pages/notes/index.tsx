@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
       <Header />
       <Content />
+      <h1>Version 1</h1>
     </main>
   )
 }
